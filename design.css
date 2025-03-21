@@ -1,0 +1,66 @@
+body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: linear-gradient(to bottom right, #6a11cb, #2575fc);
+            background-image: url('sunset-walk-russell-pugh.jpg'); /* Replace 'background.jpg' with your image file name */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+      
+}
+
+.login-container {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Blur effect for the background */
+}
+label{ 
+    display: block;
+    margin-top: 20px;
+    
+
+}
+input {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 6px;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: rgba(255, 255, 255, 0.703);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: #00a7b3;
+}
+
+#loginMessage {
+    color: rgb(255, 0, 0);
+    margin-top: 10px;
+}
+

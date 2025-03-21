@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1 { 
+        text-align: center;
+    }
+    h3 {
+        text-align: center;
+    }
+    form {
+        text-align: center;
+    }
+    table,th, td {
+          border: 1px solid black;
+        border-collapse: collapse;
+    }
+body {
+    background-color: aqua;
+    background-image: url("");
+}
+
+</style>
+
+<body>
+    <background-color: light blue;>
+    
+    <h1 style="color: rgb(32, 5, 186);">FACEBOOK</h1>
+    <!-- Removed invalid tag -->
+
+    <form id="myform">
+    <h3>Please Login</h3>
+        <input type="text" id="fname" name="fname"><br>
+
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id="lname" name="lname"> <br><br>
+        <input type="submit" value="Submit"> <br><br>
+    </form>
+
+<br><br>
+<table style="margin: 0 auto; text-align: center;" id="dataTable" >
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Arvin Jay</td>
+            <td>Puncia</td>
+        </tr>
+        <tr>
+            <td>Marcmiel</td>
+            <td>Barabad</td>
+        </tr>
+    </tbody>
+</table>
+
+<script>
+    document.getElementById("myform").addEventListener("submit",function (event){
+        event.preventDefault();// Prevent page reload
+
+    //Get form value
+    let fname=document.getElementById("fname").value.trim();
+    let lname=document.getElementById("lname").value.trim();
+
+    //Get the table body
+    let tablebody= document.getElementById("dataTable").getElementsByTagName("tbody")[0];
+   
+    //Create a new row
+    let newrow=tablebody.insertRow();
+  
+    //Insert cells
+    let cell1=newrow.insertCell(0);
+    let cell2=newrow.insertCell(1);
+   
+    cell1.textContent=fname;
+    cell2.textContent=lname;
+
+    })
+
+</script>
+
+</body>
+</html>
