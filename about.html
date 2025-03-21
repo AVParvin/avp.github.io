@@ -10,32 +10,44 @@
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+            line-height: 1.6;
         }
         header {
             background: #333;
             color: #fff;
-            padding: 10px 20px;
+            padding: 20px;
             text-align: center;
+            font-size: 1.5em;
         }
         nav {
             text-align: center;
             margin: 20px 0;
+            background: #007BFF;
+            padding: 10px 0;
         }
         nav a {
             text-decoration: none;
-            color: #333;
+            color: #fff;
             margin: 0 15px;
             font-weight: bold;
+            transition: color 0.3s ease;
         }
         nav a:hover {
-            color: #007BFF;
+            color: #FFD700;
         }
         section {
             padding: 20px;
             max-width: 800px;
-            margin: auto;
+            margin: 20px auto;
             background: #fff;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        section h2 {
+            color: #333;
+            border-bottom: 2px solid #007BFF;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
         }
         footer {
             text-align: center;
@@ -45,6 +57,14 @@
             position: fixed;
             bottom: 0;
             width: 100%;
+            font-size: 0.9em;
+        }
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+        ul li {
+            margin: 5px 0;
         }
     </style>
 </head>
@@ -53,7 +73,7 @@
         <h1>Welcome to Our School</h1>
     </header>
     <nav>
-        <a href="about.html">About</a>
+        <a href="home.html">Home</a>
         <a href="services.html">Services</a>
         <a href="contact.html">Contact</a>
     </nav>
@@ -64,15 +84,11 @@
     <section id="services">
         <h2>Our Services</h2>
         <ul>
-            <li>CSS ICT</li>
+            <li>ICT</li>
             <li>EIM</li>
             <li>COOKERY</li>
+            <li>GAS</li>
         </ul>
-    </section>
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Email: 301987@deped.gov.ph</p>
-        <p>Phone: 12345678910</p>
     </section>
 </body>
 </html>

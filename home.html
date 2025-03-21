@@ -3,69 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>arvin.com</title>
-    <link rel="stylesheet" href="home.html">
+    <title>LNHS</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            text-align: center;
+            background-color: #e9ecef;
+            color: #333;
         }
-        header footer {
-            background-color: #333;
+        header {
+            background: linear-gradient(90deg, #007bff, #6610f2);
             color: #fff;
-            padding: 15px;
-        
+            padding: 1.5rem 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        nav {
+            background: #343a40;
+            padding: 0.75rem;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         nav a {
-           color:#000000;
-           text-decoration: auto;
-           margin: 0 15px;
-           border-bottom: #00ffc8;
-           margin-top: 10px;
-
+            color: #f8f9fa;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
         }
         nav a:hover {
-            color: #007BFF;
+            color: #ffc107;
         }
         main {
-            padding: 5rem;
+            padding: 2rem;
             text-align: center;
+            background-color: #fff;
+            margin: 1rem auto;
+            max-width: 800px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        main h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
         }
         footer {
-            background: #f30303;
-            color: #fff;
+            background: #343a40;
+            color: #f8f9fa;
             text-align: center;
             padding: 1rem 0;
             position: fixed;
             bottom: 0;
             width: 100%;
+            font-size: 0.9rem;
         }
-        header {
-            background-image: url('images (1).jfif');
-            margin-top: 0;
-            margin-bottom: 0;
-            padding: 30px;
-            background-size: cover;
+        footer p {
+            margin: 0;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>WELCOME TO LNHS</h1>
+        <h1>Welcome to Lupi National High School</h1>
     </header>
     <nav>
+        <a href="home.html">Home</a>
         <a href="about.html">About</a>
-        <a href="services.html">Services</a>
         <a href="contact.html">Contact</a>
     </nav>
     <main>
-        <h2>Home Page</h2>
-        <p>How Can I Help You?</p>
+        <section id="home">
+            <h2>How can i help you?</h2>
+            
+        </section>
     </main>
     <footer>
-        <p>&copy; 2025 Lupi National High School.</p>
+        <p>&copy; 2023 My Website. All rights reserved.</p>
     </footer>
 </body>
 </html>

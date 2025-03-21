@@ -1,17 +1,16 @@
 body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        background: linear-gradient(to bottom right, #6a11cb, #2575fc);
-            background-image: url('sunset-walk-russell-pugh.jpg'); /* Replace 'background.jpg' with your image file name */
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-      
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #6a11cb, #2575fc);
+    background-image: url('download.jfif'); /* Replace 'download.jfif' with your image file name */
+    background-size: 100% 100%; /* Ensures the background covers the entire viewport */
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .login-container {

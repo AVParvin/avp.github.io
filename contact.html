@@ -15,25 +15,112 @@
         </nav>
     </header>
     <main>
+        <style>
+            body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            }
+            header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+            }
+            nav {
+            background: #444;
+            padding: 0.5rem;
+            text-align: center;
+            }
+            nav a {
+            color: #fff;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+            }
+            nav a:hover {
+            text-decoration: underline;
+            }
+            main {
+            padding: 2rem;
+            text-align: center;
+            }
+            section {
+            padding: 2rem;
+            max-width: 800px;
+            margin: 2rem auto;
+            background: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            }
+            h2 {
+            text-align: center;
+            color: #444;
+            }
+            #contactForm {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            }
+            #contactForm label {
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            }
+            #contactForm input, #contactForm textarea {
+            width: 100%;
+            max-width: 400px;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+            }
+            #contactForm button {
+            background-color: #333;
+            color: #fff;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+            }
+            #contactForm button:hover {
+            background-color: #555;
+            }
+            #contact {
+            font-weight: bold;
+            text-align: left;
+            }
+            #contact p {
+            margin: 0.5rem 0;
+            font-size: 1rem;
+            }
+        </style>
         <section>
-            <h2>Get in Touch</h2>
+            <h2>Contact Us</h2>
             <form id="contactForm">
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" name="name" required><br><br>
                 
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" required><br><br>
                 
                 <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
+                <textarea id="message" name="message" rows="5" required></textarea><br><br>
                 
                 <button type="submit">Send</button>
             </form>
         </section>
+        <section id="contact">
+            <h2>Contact info</h2>
+            <p>Email: 301987@deped.gov.ph</p>
+            <p>Phone: 12345678910</p>
+        </section>
     </main>
-    <footer>
-        <p>&copy; 2025 Lupi National High School. All rights reserved.</p>
-    </footer>
     
 </body>
 </html>
